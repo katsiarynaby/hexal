@@ -14,7 +14,7 @@ body {
     font-size: 12px;
 	font-family: 'Lato', sans-serif;
     line-height: 1;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 header {
@@ -25,14 +25,17 @@ header {
     
 }
 
-header h1 {
-   display: none;
-
+header:after {
+    content: url('../img/PointyThingy@1X.png');
+    position: relative;
+    top: -183px;
+    left: calc(50% - 90px);
+     z-index: -1; 
+    
 }
 
 nav {
     position: relative;
-    z-index: 100;
     height: 100%;
 }
 
@@ -87,13 +90,6 @@ nav ul li:first-child a {
     color: #2eb398;
 }
 
-.nav-triangle {
-    position: absolute;
-    top: -117px;
-    left: calc(50% - 90px);
-    z-index: 1;
-}
-
 .triangle {
     position: relative;
     display: block;
@@ -105,7 +101,8 @@ nav ul li:first-child a {
 .hexagon-container {
     height: 721px;
     position: relative;
-    z-index: 2;
+    padding-top: 88px;
+    padding-left: 119px;
 }
 
 .line-top1 {
@@ -165,7 +162,9 @@ nav ul li:first-child a {
 .hexagon {
     display: inline-block;
     width: 180px;
-    height: 399px;
+    height: 210px;
+    margin-bottom: 5px;
+    margin-right: 18px;
     overflow: hidden;
     visibility: hidden;
     -webkit-transform: rotate(120deg);
@@ -173,13 +172,13 @@ nav ul li:first-child a {
         -ms-transform: rotate(120deg);
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
-    cursor: pointer;
     }
 
 .hexagon-in1 {
     overflow: hidden;
     width: 100%;
     height: 100%;
+    visibility: hidden;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
         -ms-transform: rotate(-60deg);
@@ -192,6 +191,7 @@ nav ul li:first-child a {
     background-repeat: no-repeat;
     background-position: 50%;
     visibility: visible;
+    overflow: hidden;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
         -ms-transform: rotate(-60deg);
@@ -199,19 +199,19 @@ nav ul li:first-child a {
             transform: rotate(-60deg);
     }
 
-.hexagon-1row {
-        margin: -5px 14px 0px 1px;
-    }
-.hexagon-2row {
-        margin: -233px -5px 233px 21px;
-    }
-.hexagon-3row {
-    margin: -467px -104px 77px 120px;
+.row-translate .hexagon {
+    position: relative;
+    top: -48px;
 }
 
-.hexagon1 {
-    margin: -14px 17px 0px 120px;
+.row-translate {
+    margin-left: -99px;
 }
+
+.row-native:not(:first-child) {
+    margin-top: -97px;
+}
+
 
 .hexagon1-background {
     background-image: url(../img/Layer33@1X.png);
@@ -228,7 +228,6 @@ nav ul li:first-child a {
 
 .hexagon4-background {
     background-image: url(../img/Layer35@1X.png);
-    background-position: -18px 82px;
 }
 
 .hexagon5-background {
@@ -275,7 +274,7 @@ nav ul li:first-child a {
     left: 31px;
 }
 
-.info   {
+.info  {
     height: 341px;
     background-color: #2eb398;
     display: flex;
@@ -283,15 +282,6 @@ nav ul li:first-child a {
     align-items: center;
 }
 
-
-
-/* .info-article:before{
-    content: '';
-    width: 1px;
-    height: 316px;
-    color: #2c7dc3;
-    margin-right: 10px;
-} */
 
 .info-article {
     width: 820px;
@@ -343,7 +333,7 @@ nav ul li:first-child a {
 }
 
 .hexagon-info {
-    margin-top: -44px;
+    margin-top: 51px;
     margin-left: 19px; 
 }
 
@@ -398,10 +388,6 @@ fieldset {
     
 }
 
-/* .in-touch-form {
-    padding-left: 120px;  
-    width: 600px; 
-} */
 
 .button {
     background-color: #2eb398;
