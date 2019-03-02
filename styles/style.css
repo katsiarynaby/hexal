@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1020px; 
+    font-size: 12px;
+	font-family: 'Lato', sans-serif;
+    line-height: 1;
+    /* margin: 0 auto; */
+}
+
+header {
+    height: 63px;
+    background-color: #323232;
+    padding: 15px 0;
+    position: relative;
+    
+}
+
+header h1 {
+   display: none;
+
+}
+
+nav {
+    position: relative;
+    z-index: 100;
+    height: 100%;
+}
+
+nav ul {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+       
+}
+
+nav ul li {
+    list-style: none;
+    padding: 9px 5px 0;
+}
+
+
+nav ul li:nth-child(2n+1):after {
+    content: "·";
+	width: 1px;
+	height: 1px;
+	color: #e4e9eb;
+	margin-left: 14px; 
+}
+
+ nav ul li:nth-child(2) {
+    margin-right: 64px;
+}
+
+nav ul li:nth-child(3) {
+    margin-left: 64px;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #80a89f;
+}
+
+
+nav ul li:first-child a {
+    color: #2eb398;
+}
+
+.nav-triangle {
+    position: absolute;
+    top: -117px;
+    left: calc(50% - 90px);
+    z-index: 1;
+}
+
+.triangle {
+    position: relative;
+    display: block;
+    margin: -38px auto 0;
+    z-index: 2;
+    
+}
+
+.hexagon-container {
+    height: 721px;
+    position: relative;
+    z-index: 2;
+}
+
+.line-top1 {
+    width: 410px;
+    height: 1px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 11px;
+    left: 32px;
+}
+
+.line-top2 {
+    width: 410px;
+    height: 1px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 11px;
+    right: 32px;
+}
+
+.line-hexagon1-left {
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 141px;
+    left: 99px;
+}
+
+.line-hexagon1-right {
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 141px;
+    right: 99px;
+}
+
+.line-hexagon3-left {
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 477px;
+    left: 99px;
+}
+
+.line-hexagon3-right {
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 477px;
+    right: 99px;
+}
+
+.hexagon {
+    display: inline-block;
+    width: 180px;
+    height: 399px;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+       -moz-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+         -o-transform: rotate(120deg);
+            transform: rotate(120deg);
+    cursor: pointer;
+    }
+
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    }
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+       -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+         -o-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+    }
+
+.hexagon-1row {
+        margin: -5px 14px 0px 1px;
+    }
+.hexagon-2row {
+        margin: -233px -5px 233px 21px;
+    }
+.hexagon-3row {
+    margin: -467px -104px 77px 120px;
+}
+
+.hexagon1 {
+    margin: -14px 17px 0px 120px;
+}
+
+.hexagon1-background {
+    background-image: url(../img/Layer33@1X.png);
+    
+}
+
+.hexagon2-background {
+    background-image: url(../img/Layer31@1X.png);
+}
+
+.hexagon3-background {
+    background-image: url(../img/Layer34@1X.png);
+}
+
+.hexagon4-background {
+    background-image: url(../img/Layer35@1X.png);
+    background-position: -18px 82px;
+}
+
+.hexagon5-background {
+    background-image: url(../img/Layer36@1X.png);
+}
+
+.hexagon6-background {
+    background-image: url(../img/Layer44@1X.png);
+}
+.hexagon7-background {
+    background-image: url(../img/Layer37@1X.png);
+}
+
+.hexagon8-background {
+    background-image: url(../img/Layer38@1X.png);
+}
+
+.hexagon9-background {
+    background-image: url(../img/Layer39@1X.png);
+}
+
+.hexagon10-background {
+    background-image: url(../img/Layer40@1X.png);
+}
+
+.hexagon11-background {
+    background-image: url(../img/Layer41@1X.png);
+}
+
+.hexagon12-background {
+    background-image: url(../img/Layer43@1X.png);
+}
+
+.hexagon13-background {
+    background-image: url(../img/Layer42@1X.png);
+}
+
+.line-container-hexagon-button {
+    width: 960px;
+    height: 1px;
+    background-color: #e4e9eb;
+    position: absolute;
+    top: 709px;
+    left: 31px;
+}
+
+.info   {
+    height: 341px;
+    background-color: #2eb398;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .info-article:before{
+    content: '';
+    width: 1px;
+    height: 316px;
+    color: #2c7dc3;
+    margin-right: 10px;
+} */
+
+.info-article {
+    width: 820px;
+    height: 312px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #d7fcf5;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.info-article h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.img-person {
+    overflow: hidden;
+    height: 263px;
+    width: 205px;
+}
+
+.info-person {
+    height: 206px;
+    width: 580px;
+    align-self: center;
+    padding-left: 13px;
+    margin-top: -8px;
+}
+
+
+.info-person-work {
+    color: #20816d;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.info-person-story {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.hexagon-info-background {
+    background-image: url(../img/Image@1X.png);
+}
+
+.hexagon-info {
+    margin-top: -44px;
+    margin-left: 19px; 
+}
+
+
+footer {
+    height: 564px;
+    background-color: #323232;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;    
+}
+
+.form {
+    margin-left: 120px;  
+    width: 600px;
+    padding-top: 62px;
+    position: relative;
+    
+}
+
+.form-name {
+    font-family: 'Maven Pro', sans-serif;
+    color: #e0e0e0;
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 580px;
+    height: 40px;
+    background-color: #454545;
+    color: #bebebe;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    
+}
+
+textarea {
+    width: 580px;
+    height: 150px;
+    background-color: #454545;
+    color: #bebebe;
+    padding: 10px;
+    border: none;
+    resize: none;
+    margin-bottom: 16px;
+}
+
+fieldset {
+    border: none;
+    
+}
+
+/* .in-touch-form {
+    padding-left: 120px;  
+    width: 600px; 
+} */
+
+.button {
+    background-color: #2eb398;
+    height: 37px;
+    width: 90px;
+    border: none;
+    color: #d7fcf5;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 65px;
+    right: 21px;  
+}
+
+footer p {
+    font-size: 18px;
+    color: #bebebe;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+
+}
