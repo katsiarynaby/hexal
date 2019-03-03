@@ -22,16 +22,20 @@ header {
     background-color: #323232;
     padding: 15px 0;
     position: relative;
-    
 }
 
 header:after {
-    content: url('../img/PointyThingy@1X.png');
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 28px 45px 0px 45px;
+    border-color: #323232 transparent transparent transparent;
     position: relative;
-    top: -183px;
-    left: calc(50% - 90px);
-     z-index: -1; 
-    
+    left: calc(50% - 44px);
+    left: -webkit-calc(50% - 44px);
+    top: -2px;
 }
 
 nav {
@@ -94,7 +98,6 @@ nav ul li:first-child a {
     position: relative;
     display: block;
     margin: -38px auto 0;
-    z-index: 2;
     
 }
 
