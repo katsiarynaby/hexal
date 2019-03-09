@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url('../font/MyriadPro-Regular.woff2') format('woff2'),
+        url('../font/MyriadPro-Regular.woff') format('woff'),
+        url('../font/MyriadPro.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.eot');
+    src: url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Regular.woff2') format('woff2'),
+        url('../font/Lato-Regular.woff') format('woff'),
+        url('../font/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maven Pro';
+    src: url('../font/MavenPro-Regular.eot');
+    src: url('../font/MavenPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/MavenPro-Regular.woff2') format('woff2'),
+        url('../font/MavenPro-Regular.woff') format('woff'),
+        url('../font/MavenPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Bold.eot');
+    src: url('../font/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Lato-Bold.woff2') format('woff2'),
+        url('../font/Lato-Bold.woff') format('woff'),
+        url('../font/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
