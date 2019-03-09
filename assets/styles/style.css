@@ -385,7 +385,7 @@ nav ul li a:hover {
 
 
 
-footer {
+footer.getInTouch {
     height: 564px;
     background-color: #323232;
     display: flex;
@@ -396,7 +396,7 @@ footer {
 
 }
 
-footer:before {
+footer.getInTouch:before {
     content: '';
     width: 960px;
     height: 1px;
@@ -406,7 +406,7 @@ footer:before {
     left: 7%;
 }
 
-footer:after {
+footer.getInTouch:after {
     content: '';
     width: 960px;
     height: 1px;
@@ -519,4 +519,17 @@ fieldset {
     font-family: 'Lato', 'Mariad Pro', sans-serif;
     color: #bebebe;
     padding-bottom: 7px;
+}
+
+.footer-copyright {
+    font-family: 'Maven Pro', sans-serif;
+    color: #454545;
+    height: 42px ;
+    background-color: #222222;
+    margin: 0 auto;
+}
+.footer-copyright p {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 15px 0 0 36px;
 }
