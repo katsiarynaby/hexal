@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hexal</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/fontello.css">
+    <link rel="stylesheet" href="assets/styles/fonts.css">
 </head>
 
 <body>
@@ -16,22 +18,21 @@
                 <li class="item"><a href="#">Portfolio</a></li>
                 <li class="item"><a href="#">About</a></li>
                 <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Get in touch</a></li>
+                <li class="item"><a href="#getInTouch">Get in touch</a></li>
             </ul>
         </nav>
         <h1>
             <a href="#">
-                <img src="img/Logo@1X.png" alt="Hexal" class="triangle">
+                <img src="assets/img/Logo@1X.png" alt="Hexal" class="triangle">
             </a>
         </h1>
     </header>
     <main>
         <section class="hexagon-container">
-
             <div class="line-top1"></div>
             <div class="line-top2"></div>
             <div class="line-hexagon1-left"></div>
-            <div class="ow-native">
+            <div class="native">
                 <div class="hexagon">
                     <div class="hexagon-in1">
                         <div class="hexagon-in2 hexagon1-background"></div>
@@ -119,24 +120,38 @@
                 </div>
                 <div class="info-person">
                     <h3>Smith Anderson</h3>
-
                     <p class="info-person-work">Illustrator & Character Designer</p>
                     <p class="info-person-story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
                         porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non
                         urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum
                         libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at
                         sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+                    <div class="social">
+                        <ul class="social-list">
+                            <li class><a href="https://www.facebook.com" class="link-facebook"><i
+                                        class="icon-facebook icon-active"></i></a></li>
+                            <li><a href="https://twitter.com" class="link-twitter"><i
+                                        class='icon-twitter icon-active'></i></a></li>
+                            <li><a href="https://plus.google.com/discover" class="link-glpus"><i
+                                        class='icon-gplus icon-active'></i></a></li>
+                            <li><a href="https://www.pinterest.com/" class='link-pinterest'><i
+                                        class="icon-pinterest icon-active"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class='link-linkedin'><i
+                                        class='icon-linkedin icon-active'></i></a></li>
+                            <li><a href="https://dribbble.com/" class='link-dribbble'><i
+                                        class='icon-dribbble icon-active'></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </section>
     </main>
     <footer>
         <div class="form">
-            <h3 class="form-name">Get In Touch</h3>
+            <h3 class="form-name"><a name='getInTouch'>Get In Touch</a></h3>
             <p>In order to get in touch use the contact form below:</p>
             <form action="#" class="in-touch-form">
                 <fieldset>
-                    <!-- <legend>Get in Touch</legend> -->
                     <input class='input-text' type="text" placeholder="Name(Required)" required>
                     <input type="email" placeholder="Email(Required)" required>
                     <input class='input-text' type="text" placeholder="Subject">
@@ -147,11 +162,14 @@
             </form>
         </div>
         <div class="footer-info">
-            <p></p>
+            <p class="footer-info-text">
+                <span>Quisque Hendrerit:</span> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae
+            </p>
             <div class="contact">
-                <p><span></span></p>
-                <p><span></span></p>
-                <p><span></span></p>
+                <p><i class='icon-location'></i>Elm St. 14/05 Lost City</p>
+                <p><a href="tel:+35283318635"><i class="icon-phone"></i></a> + 3528 331 86 35 </p>
+                <p><a href='mailto:info@hexalcorp.com'><i class='icon-mail'></i></a> info@hexalcorp.com</p>
             </div>
 
         </div>

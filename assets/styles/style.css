@@ -1,27 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
-
 * {
-	margin: 0;
-	padding: 0;
-	-moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 body {
-    width: 1020px; 
-    font-size: 12px;
-	font-family: 'Lato', sans-serif;
-    line-height: 1;
     margin: 0 auto;
+    min-width: 1020px;
+
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    
 }
 
 header {
     height: 63px;
-    background-color: #323232;
     padding: 15px 0;
     position: relative;
+    background-color: #323232;
 }
 
 header:after {
@@ -39,17 +38,17 @@ header:after {
 }
 
 nav {
-    position: relative;
     height: 100%;
+    position: relative;
+    
 }
 
-nav ul {  
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     height: 100%;
-       
 }
 
 nav ul li {
@@ -57,28 +56,26 @@ nav ul li {
     padding: 9px 5px 0;
 }
 
-
 nav ul li:nth-child(2n+1):after {
     content: "·";
-	width: 1px;
-	height: 1px;
-	color: #e4e9eb;
-	margin-left: 14px; 
+    width: 1px;
+    height: 1px;
+    color: #e4e9eb;
+    margin-left: 14px;
 }
 
- nav ul li:nth-child(2) {
+nav ul li:nth-child(2) {
     margin-right: 64px;
 }
 
 nav ul li:nth-child(3) {
     margin-left: 64px;
-} 
+}
 
 nav ul li a {
     text-decoration: none;
     font-size: 10px;
     text-transform: uppercase;
-
 }
 
 nav ul li a {
@@ -86,19 +83,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #80a89f;
-}
-
-
-nav ul li:first-child a {
     color: #2eb398;
 }
+
+/* nav ul li:first-child a {
+    color: #2eb398;
+} */
 
 .triangle {
     position: relative;
     display: block;
     margin: -38px auto 0;
-    
 }
 
 .hexagon-container {
@@ -106,6 +101,8 @@ nav ul li:first-child a {
     position: relative;
     padding-top: 88px;
     padding-left: 119px;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 .line-top1 {
@@ -171,11 +168,11 @@ nav ul li:first-child a {
     overflow: hidden;
     visibility: hidden;
     -webkit-transform: rotate(120deg);
-       -moz-transform: rotate(120deg);
-        -ms-transform: rotate(120deg);
-         -o-transform: rotate(120deg);
-            transform: rotate(120deg);
-    }
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
 
 .hexagon-in1 {
     overflow: hidden;
@@ -183,11 +180,12 @@ nav ul li:first-child a {
     height: 100%;
     visibility: hidden;
     -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
 .hexagon-in2 {
     width: 100%;
     height: 100%;
@@ -196,11 +194,11 @@ nav ul li:first-child a {
     visibility: visible;
     overflow: hidden;
     -webkit-transform: rotate(-60deg);
-       -moz-transform: rotate(-60deg);
-        -ms-transform: rotate(-60deg);
-         -o-transform: rotate(-60deg);
-            transform: rotate(-60deg);
-    }
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
 
 .row-translate .hexagon {
     position: relative;
@@ -215,10 +213,8 @@ nav ul li:first-child a {
     margin-top: -97px;
 }
 
-
 .hexagon1-background {
     background-image: url(../img/Layer33@1X.png);
-    
 }
 
 .hexagon2-background {
@@ -231,6 +227,7 @@ nav ul li:first-child a {
 
 .hexagon4-background {
     background-image: url(../img/Layer35@1X.png);
+    background-position: -20px -15px;
 }
 
 .hexagon5-background {
@@ -240,6 +237,7 @@ nav ul li:first-child a {
 .hexagon6-background {
     background-image: url(../img/Layer44@1X.png);
 }
+
 .hexagon7-background {
     background-image: url(../img/Layer37@1X.png);
 }
@@ -277,14 +275,13 @@ nav ul li:first-child a {
     left: 31px;
 }
 
-.info  {
+.info {
     height: 341px;
     background-color: #2eb398;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 .info-article {
     width: 820px;
@@ -295,7 +292,6 @@ nav ul li:first-child a {
     border-right: 1px solid #219d84;
     display: flex;
     justify-content: flex-start;
-
 }
 
 .info-article h3 {
@@ -312,12 +308,11 @@ nav ul li:first-child a {
 
 .info-person {
     height: 206px;
-    width: 580px;
+    width: 596px;
     align-self: center;
     padding-left: 13px;
     margin-top: -8px;
 }
-
 
 .info-person-work {
     color: #20816d;
@@ -327,8 +322,10 @@ nav ul li:first-child a {
 
 .info-person-story {
     font-size: 12px;
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 25px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: justify;
 }
 
 .hexagon-info-background {
@@ -337,24 +334,92 @@ nav ul li:first-child a {
 
 .hexagon-info {
     margin-top: 51px;
-    margin-left: 19px; 
+    margin-left: 19px;
 }
+
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.social ul li {
+    list-style: none;
+    width: 25px;
+    height: 24px;
+}
+
+.icon-active {
+    color: #03ac95;
+    padding: 5px;
+}
+
+.icon-active:hover {
+    background-color: #218f87;
+}
+
+
+.icon-facebook {
+    background-color: #a5dbd4;
+}
+
+.icon-twitter {
+    background-color: #6ccbbe;
+}
+
+.icon-gplus {
+    background-color: #7ed0c5;
+}
+
+.icon-pinterest {
+    background-color: #acddd7;
+}
+
+.icon-linkedin {
+    background-color: #acddd7;
+}
+
+.icon-dribbble {
+    background-color: #6dcbbe;
+}
+
 
 
 footer {
     height: 564px;
     background-color: #323232;
     display: flex;
-    justify-content: flex-start;
-    align-items: stretch;    
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+footer:before {
+    content: '';
+    width: 960px;
+    height: 1px;
+    background-color: #2b2b2b;
+    position: absolute;
+    top: 13px;
+    left: 7%;
+}
+
+footer:after {
+    content: '';
+    width: 960px;
+    height: 1px;
+    background-color: #2b2b2b;
+    position: absolute;
+    bottom: 12px;
+    left: 7%;
 }
 
 .form {
-    margin-left: 120px;  
     width: 600px;
     padding-top: 62px;
     position: relative;
-    
 }
 
 .form-name {
@@ -368,11 +433,25 @@ input {
     width: 580px;
     height: 40px;
     background-color: #454545;
-    color: #bebebe;
     padding: 10px;
     margin-bottom: 15px;
     border: none;
-    
+}
+
+::-webkit-input-placeholder {
+    color: #bebebe;
+}
+
+::-moz-placeholder {
+    color: #bebebe;
+}
+
+:-moz-placeholder {
+    color: #bebebe;
+}
+
+:-ms-input-placeholder {
+    color: #bebebe;
 }
 
 textarea {
@@ -388,9 +467,7 @@ textarea {
 
 fieldset {
     border: none;
-    
 }
-
 
 .button {
     background-color: #2eb398;
@@ -401,13 +478,45 @@ fieldset {
     text-transform: uppercase;
     position: absolute;
     bottom: 65px;
-    right: 21px;  
+    right: 20px;
 }
 
-footer p {
+.form p {
     font-size: 18px;
     color: #bebebe;
     margin-bottom: 20px;
     letter-spacing: 0.05em;
+}
 
+.footer-info {
+    width: 185px;
+    padding-top: 131px;
+}
+
+.footer-info-text {
+    color: #bebebe;
+    font-size: 12px;
+    font-family: 'Myriad Pro', sans-serif;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    margin-bottom: 39px;
+    text-align: justify;
+}
+
+.footer-info p span {
+    color: #e0e0e0;
+}
+
+.icon-mail,
+.icon-phone,
+.icon-location {
+    color: #2eb398;
+    padding-right: 3px;
+    font-size: 14px;
+}
+
+.contact p {
+    font-family: 'Lato', 'Mariad Pro', sans-serif;
+    color: #bebebe;
+    padding-bottom: 7px;
 }
