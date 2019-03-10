@@ -1,67 +1,64 @@
 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
-    min-width: 1020px;
-
+    font-family: 'Lato', 'Tahoma', sans-serif;
     font-size: 12px;
-    font-family: 'Lato', sans-serif;
     line-height: 1;
-    
+    min-width: 1020px;
+    margin: 0 auto;
 }
 
 header {
+    position: relative;
     height: 63px;
     padding: 15px 0;
-    position: relative;
     background-color: #323232;
 }
 
 header:after {
-    content: '';
+    position: relative;
+    top: -2px;
+    left: calc(50% - 44px);
+    left: -webkit-calc(50% - 44px);
     display: inline-block;
     width: 0;
     height: 0;
+    content: '';
+    border-width: 28px 45px 0 45px;
     border-style: solid;
-    border-width: 28px 45px 0px 45px;
     border-color: #323232 transparent transparent transparent;
-    position: relative;
-    left: calc(50% - 44px);
-    left: -webkit-calc(50% - 44px);
-    top: -2px;
 }
 
 nav {
-    height: 100%;
     position: relative;
-    
+    height: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    list-style: none;
     padding: 9px 5px 0;
+    list-style: none;
 }
 
 nav ul li:nth-child(2n+1):after {
-    content: "·";
     width: 1px;
     height: 1px;
-    color: #e4e9eb;
     margin-left: 14px;
+    content: '·';
+    color: #e4e9eb;
 }
 
 nav ul li:nth-child(2) {
@@ -73,8 +70,8 @@ nav ul li:nth-child(3) {
 }
 
 nav ul li a {
-    text-decoration: none;
     font-size: 10px;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -97,76 +94,76 @@ nav ul li a:hover {
 }
 
 .hexagon-container {
-    height: 721px;
     position: relative;
+    width: 1020px;
+    height: 721px;
+    margin: 0 auto;
     padding-top: 88px;
     padding-left: 119px;
-    width: 1020px;
-    margin: 0 auto;
 }
 
 .line-top1 {
-    width: 410px;
-    height: 1px;
-    background-color: #e4e9eb;
     position: absolute;
     top: 11px;
     left: 32px;
-}
-
-.line-top2 {
     width: 410px;
     height: 1px;
     background-color: #e4e9eb;
+}
+
+.line-top2 {
     position: absolute;
     top: 11px;
     right: 32px;
+    width: 410px;
+    height: 1px;
+    background-color: #e4e9eb;
 }
 
 .line-hexagon1-left {
-    width: 1px;
-    height: 104px;
-    background-color: #e4e9eb;
     position: absolute;
     top: 141px;
     left: 99px;
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
 }
 
 .line-hexagon1-right {
-    width: 1px;
-    height: 104px;
-    background-color: #e4e9eb;
     position: absolute;
     top: 141px;
     right: 99px;
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
 }
 
 .line-hexagon3-left {
-    width: 1px;
-    height: 104px;
-    background-color: #e4e9eb;
     position: absolute;
     top: 477px;
     left: 99px;
-}
-
-.line-hexagon3-right {
     width: 1px;
     height: 104px;
     background-color: #e4e9eb;
+}
+
+.line-hexagon3-right {
     position: absolute;
     top: 477px;
     right: 99px;
+    width: 1px;
+    height: 104px;
+    background-color: #e4e9eb;
 }
 
 .hexagon {
     display: inline-block;
+    visibility: hidden;
+    overflow: hidden;
     width: 180px;
     height: 210px;
-    margin-bottom: 5px;
     margin-right: 18px;
-    overflow: hidden;
-    visibility: hidden;
+    margin-bottom: 5px;
     -webkit-transform: rotate(120deg);
     -moz-transform: rotate(120deg);
     -ms-transform: rotate(120deg);
@@ -175,10 +172,10 @@ nav ul li a:hover {
 }
 
 .hexagon-in1 {
+    visibility: hidden;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    visibility: hidden;
     -webkit-transform: rotate(-60deg);
     -moz-transform: rotate(-60deg);
     -ms-transform: rotate(-60deg);
@@ -187,17 +184,17 @@ nav ul li a:hover {
 }
 
 .hexagon-in2 {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 50%;
     visibility: visible;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
     -webkit-transform: rotate(-60deg);
     -moz-transform: rotate(-60deg);
     -ms-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
 .row-translate .hexagon {
@@ -267,65 +264,86 @@ nav ul li a:hover {
 }
 
 .line-container-hexagon-button {
-    width: 960px;
-    height: 1px;
-    background-color: #e4e9eb;
     position: absolute;
     top: 709px;
     left: 31px;
+    width: 960px;
+    height: 1px;
+    background-color: #e4e9eb;
 }
 
+.navigation {
+    height: 6px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: -89px;
+    
+}
+
+.navigation-block {
+    width: 6px;
+    height: 100%;
+    background-color: #ddd2c5;
+    list-style: none;
+    margin-right: 3px;
+}
+.navigation-block-active {
+    background-color: #8b8784;
+}
+
+
 .info {
+    display: flex;
     height: 341px;
     background-color: #2eb398;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .info-article {
+    font-family: 'Maven Pro', 'Tahoma', sans-serif;
+    display: flex;
     width: 820px;
     height: 312px;
-    font-family: 'Maven Pro', sans-serif;
     color: #d7fcf5;
-    border-left: 1px solid #219d84;
     border-right: 1px solid #219d84;
-    display: flex;
+    border-left: 1px solid #219d84;
     justify-content: flex-start;
 }
 
 .info-article h3 {
     font-size: 30px;
-    margin-bottom: 5px;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .img-person {
     overflow: hidden;
-    height: 263px;
     width: 205px;
+    height: 263px;
 }
 
 .info-person {
-    height: 206px;
     width: 596px;
-    align-self: center;
-    padding-left: 13px;
+    height: 206px;
     margin-top: -8px;
+    padding-left: 13px;
+    align-self: center;
 }
 
 .info-person-work {
-    color: #20816d;
     font-size: 18px;
     margin-bottom: 14px;
+    color: #20816d;
 }
 
 .info-person-story {
     font-size: 12px;
-    margin-bottom: 25px;
     line-height: 20px;
-    letter-spacing: 0;
+    margin-bottom: 25px;
     text-align: justify;
+    letter-spacing: 0;
 }
 
 .hexagon-info-background {
@@ -339,25 +357,24 @@ nav ul li a:hover {
 
 .social ul {
     display: flex;
-    justify-content: flex-end;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .social ul li {
-    list-style: none;
     width: 25px;
     height: 24px;
+    list-style: none;
 }
 
 .icon-active {
-    color: #03ac95;
     padding: 5px;
+    color: #03ac95;
 }
 
 .icon-active:hover {
     background-color: #218f87;
 }
-
 
 .icon-facebook {
     background-color: #a5dbd4;
@@ -383,59 +400,58 @@ nav ul li a:hover {
     background-color: #6dcbbe;
 }
 
-
-
 footer.getInTouch {
-    height: 564px;
-    background-color: #323232;
+    position: relative;
     display: flex;
+    height: 564px;
+    margin: 0 auto;
+    background-color: #323232;
     justify-content: center;
     align-items: stretch;
-    position: relative;
-    margin: 0 auto;
-
 }
 
 footer.getInTouch:before {
-    content: '';
-    width: 960px;
-    height: 1px;
-    background-color: #2b2b2b;
     position: absolute;
     top: 13px;
     left: 7%;
+    width: 960px;
+    height: 1px;
+    content: '';
+    background-color: #2b2b2b;
 }
 
 footer.getInTouch:after {
-    content: '';
-    width: 960px;
-    height: 1px;
-    background-color: #2b2b2b;
     position: absolute;
     bottom: 12px;
     left: 7%;
+    width: 960px;
+    height: 1px;
+    content: '';
+    background-color: #2b2b2b;
 }
 
 .form {
+    position: relative;
     width: 600px;
     padding-top: 62px;
-    position: relative;
 }
 
 .form-name {
-    font-family: 'Maven Pro', sans-serif;
-    color: #e0e0e0;
+    font-family: 'Maven Pro', 'Tahoma', sans-serif;
     font-size: 30px;
     margin-bottom: 2px;
+    color: #e0e0e0;
 }
 
 input {
+    font-family: inherit;
+    font-size: inherit;
     width: 580px;
     height: 40px;
-    background-color: #454545;
-    padding: 10px;
     margin-bottom: 15px;
+    padding: 10px;
     border: none;
+    background-color: #454545;
 }
 
 ::-webkit-input-placeholder {
@@ -455,14 +471,36 @@ input {
 }
 
 textarea {
+    font-family: inherit;
+    font-size: inherit;
     width: 580px;
     height: 150px;
-    background-color: #454545;
-    color: #bebebe;
-    padding: 10px;
-    border: none;
-    resize: none;
     margin-bottom: 16px;
+    padding: 10px;
+    resize: none;
+    color: #bebebe;
+    border: none;
+    background-color: #454545;
+}
+
+textarea:-moz-placeholder {
+    color: #bebebe;
+}
+
+textarea::-moz-placeholder {
+    color: #bebebe;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #bebebe;
+}
+
+textarea:-ms-placeholder {
+    color: #bebebe;
+}
+
+textarea::placeholder {
+    color: #bebebe;
 }
 
 fieldset {
@@ -470,22 +508,22 @@ fieldset {
 }
 
 .button {
-    background-color: #2eb398;
-    height: 37px;
-    width: 90px;
-    border: none;
-    color: #d7fcf5;
-    text-transform: uppercase;
     position: absolute;
-    bottom: 65px;
     right: 20px;
+    bottom: 65px;
+    width: 90px;
+    height: 37px;
+    text-transform: uppercase;
+    color: #d7fcf5;
+    border: none;
+    background-color: #2eb398;
 }
 
 .form p {
     font-size: 18px;
-    color: #bebebe;
     margin-bottom: 20px;
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
+    color: #bebebe;
 }
 
 .footer-info {
@@ -494,13 +532,13 @@ fieldset {
 }
 
 .footer-info-text {
-    color: #bebebe;
+    font-family: 'Myriad Pro', 'Tahoma', sans-serif;
     font-size: 12px;
-    font-family: 'Myriad Pro', sans-serif;
     line-height: 21px;
-    letter-spacing: 0.03em;
     margin-bottom: 39px;
     text-align: justify;
+    letter-spacing: .03em;
+    color: #bebebe;
 }
 
 .footer-info p span {
@@ -510,26 +548,27 @@ fieldset {
 .icon-mail,
 .icon-phone,
 .icon-location {
-    color: #2eb398;
-    padding-right: 3px;
     font-size: 14px;
+    padding-right: 3px;
+    color: #2eb398;
 }
 
 .contact p {
-    font-family: 'Lato', 'Mariad Pro', sans-serif;
-    color: #bebebe;
+    font-family: 'Lato', 'Mariad Pro', 'Tahoma', sans-serif;
     padding-bottom: 7px;
+    color: #bebebe;
 }
 
 .footer-copyright {
-    font-family: 'Maven Pro', sans-serif;
-    color: #454545;
-    height: 42px ;
-    background-color: #222222;
+    font-family: 'Maven Pro', 'Tahoma', sans-serif;
+    height: 42px;
     margin: 0 auto;
+    color: #454545;
+    background-color: #222;
 }
+
 .footer-copyright p {
     width: 1020px;
     margin: 0 auto;
-    padding: 15px 0 0 36px;
+    padding: 15px 36px;
 }
