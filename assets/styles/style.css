@@ -14,6 +14,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     position: relative;
     height: 63px;
@@ -278,7 +282,6 @@ nav ul li a:hover {
     flex-direction: row;
     margin-top: 50px;
     margin-left: -89px;
-    
 }
 
 .navigation-block {
@@ -288,10 +291,10 @@ nav ul li a:hover {
     list-style: none;
     margin-right: 3px;
 }
+
 .navigation-block-active {
     background-color: #8b8784;
 }
-
 
 .info {
     display: flex;
